@@ -1,0 +1,15 @@
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.navbar {
+	@include transforms(background .5s ease-in-out, padding .5s ease-in-out, border-bottom 1s ease-in-out);
+	background: 0, 0;
+	padding: 0;
+	border-bottom: 0, 0;
+}
+
+.navbar.navbar-collapsed {
+	padding: 0.5em;
+	background-color: $black;
+	border-bottom: 0.2em solid $customRed;
+}

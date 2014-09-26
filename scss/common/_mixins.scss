@@ -127,3 +127,21 @@
 		background: gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
 	}
 }
+
+@mixin oneTransform($option: padding, $time: 0.5s, $type: ease-in-out){
+	-webkit-transition: $option $time $type;
+	-moz-transition: $option $time $type;
+	-ms-transition: $option $time $type;
+	-o-transition: $option $time $type;
+	transition: $option $time $type;
+}
+
+@mixin transforms($args...){
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+
