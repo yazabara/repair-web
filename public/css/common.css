@@ -1,0 +1,242 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+#footer {
+  background-image: url("../images/workout/common/tweed.png");
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px; }
+
+@font-face {
+  font-family: 'Archive Font';
+  src: url('fonts/Archive.otf');
+  font-weight: normal;
+  font-style: normal; }
+
+.new-font {
+  font-family: 'Archive Font'; }
+
+.magic-word-container span {
+  color: #F9BA41;
+  opacity: 1;
+  text-shadow: 0px 0px 2px #F9BA41, 1px 1px 4px rgba(0, 0, 0, 0.7);
+  -webkit-animation: magic 0.9s linear backwards;
+  -moz-animation: magic 0.9s linear backwards;
+  -ms-animation: magic 0.9s linear backwards;
+  animation: magic 0.9s linear backwards; }
+
+.magic-word-container span:hover {
+  text-shadow: 0px 0px 40px #F9BA41; }
+
+/* Webkit, Chrome and Safari */
+@-webkit-keyframes magic {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #F9BA41; }
+
+  90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #F9BA41; }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #F9BA41, 1px 1px 4px rgba(0, 0, 0, 0.7); } }
+
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes magic {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #F9BA41; }
+
+  90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #F9BA41; }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #F9BA41, 1px 1px 4px rgba(0, 0, 0, 0.7); } }
+
+/* Opera 12.0 */
+@-o-keyframes magic {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #F9BA41; }
+
+  90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #F9BA41; }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #F9BA41, 1px 1px 4px rgba(0, 0, 0, 0.7); } }
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes magic {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #F9BA41; }
+
+  90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #F9BA41; }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 2px #F9BA41, 1px 1px 4px rgba(0, 0, 0, 0.7); } }
+
+.show-down {
+  -webkit-animation: show-down 1s ease-out;
+  -moz-animation: show-down 1s ease-out;
+  -ms-animation: show-down 1s ease-out;
+  animation: show-down 1s ease-out; }
+
+/* Webkit, Chrome and Safari */
+@-webkit-keyframes show-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+
+/* Mozilla Firefox 15 below */
+@-moz-keyframes show-down {
+  0% {
+    -moz-transform: translateY(-100%);
+    opacity: 0; }
+
+  100% {
+    -moz-transform: translateY(0);
+    opacity: 1; } }
+
+/* Opera 12.0 */
+@-o-keyframes show-down {
+  0% {
+    -o-transform: translateY(-100%);
+    opacity: 0; }
+
+  100% {
+    -o-transform: translateY(0);
+    opacity: 1; } }
+
+/* W3, Opera 12+, Firefox 16+ */
+@keyframes show-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0; }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.circle {
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  width: 15em;
+  height: 15em;
+  overflow: hidden; }
+  .circle h1 {
+    color: #808080;
+    opacity: 0.2;
+    font-size: 1.6em;
+    line-height: 7.5em;
+    text-align: center;
+    transition: color 0.8s ease-in-out; }
+
+.circle:before, .circle:after {
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  box-shadow: inset 4.6em 0 0 rgba(30, 140, 209, 0.2), inset 0 4.6em 0 rgba(30, 140, 209, 0.2), inset -4.6em 0 0 rgba(30, 140, 209, 0.2), inset 0 -4.6em 0 rgba(30, 140, 209, 0.2);
+  transition: box-shadow 0.75s; }
+
+.circle:after {
+  transform: rotate(45deg); }
+
+.circle:hover:before, .circle:hover:after {
+  box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), inset 0 0.86em 0 rgba(252, 150, 0, 0.5), inset -0.86em 0 0 rgba(0, 255, 0, 0.5), inset 0 -0.86em 0 rgba(0, 150, 255, 0.5); }
+
+.circle:hover > h1 {
+  color: #333333;
+  opacity: 0.5; }
+
+.img-mask {
+  background: url("../images/patterns/pattern.png") repeat; }
+
+.header-bg {
+  position: relative;
+  width: 100%;
+  height: 110%; }
+  .header-bg .header-img {
+    background-image: url("../images/repair/trucks/truck1.jpg");
+    opacity: 0.9; }
+  .header-bg .container {
+    position: relative;
+    z-index: 2; }
+    .header-bg .container .header-text {
+      text-align: center; }
+      .header-bg .container .header-text h1 {
+        font-size: 7em;
+        color: #fff;
+        margin-top: 1em;
+        border: 0.05em solid;
+        padding: 0.2em;
+        display: inline-block; }
+
+.big-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.content-wrapper {
+  width: 100%;
+  position: relative; }
+
+.border-bottom {
+  border-bottom: 0.2em solid #b84d45; }
+
+.border-top {
+  border-top: 0.2em solid #b84d45; }
+
+.container-info {
+  position: relative;
+  width: 100%; }
+
+.parralax-holder {
+  width: 100%;
+  overflow: hidden;
+  min-height: 400px; }
+  .parralax-holder .background {
+    opacity: 0.9; }
+
+.middle-img {
+  background-image: url("../images/repair/trucks/truck1.jpg");
+  top: -700px; }
