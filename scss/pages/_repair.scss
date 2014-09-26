@@ -21,12 +21,6 @@ $backgroundOpacity: 0.9;
   bottom: 0;
   z-index: 1;
   background: 50% 50% no-repeat;
-
-  // TODO не работает, если убрать и поставить класс .big-image
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .content-wrapper {
@@ -57,6 +51,5 @@ $backgroundOpacity: 0.9;
 }
 
 .middle-img {
-  background-image: url("../images/repair/trucks/truck1.jpg");
-  top: -700px;
+  background-image: url("../images/repair/trucks/truck4.jpg");
 }
