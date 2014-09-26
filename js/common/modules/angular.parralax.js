@@ -21,6 +21,13 @@ angular.module('BackgroundParallax', []).directive('parallaxBackground', ['$wind
 				var calcValY = sign * (start * speed);
 				//эффект параллакса задается с помощью свойства background-position
 				elem.css('background-position', "50% " + calcValY + "px");
+//				elem.css({
+//					'-webkit-transform' : 'translate3d(0px, ' + calcValY + 'px, 0px);)',
+//					'-moz-transform'    : 'translate3d(0px, ' + calcValY + 'px, 0px);)',
+//					'-ms-transform'     : 'translate3d(0px, ' + calcValY + 'px, 0px);)',
+//					'-o-transform'      : 'translate3d(0px, ' + calcValY + 'px, 0px);)',
+//					'transform'         : 'translate3d(0px, ' + calcValY + 'px, 0px);)'
+//				});
 			};
 
 			angular.element($window).bind('load', setPosition);
