@@ -1,0 +1,20 @@
+//common
+@import "common/variables";
+@import "common/mixins";
+//@import "common/main";
+//@import "common/blocks/sub-header";
+//@import "common/blocks/social-links";
+@import "common/blocks/sticky-footer";
+//@import "common/blocks/alerts";
+@import "common/fonts";
+//modules
+@import "common/modules/magic-word";
+@import "common/modules/show-down";
+@import "common/modules/time-line";
+@import "common/modules/circle-color-effect";
+
+//pages
+//@import "pages/test";
+//@import "pages/epam";
+@import "pages/repair";
+

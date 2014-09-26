@@ -1,0 +1,93 @@
+@import "../common/variables";
+
+$backgroundOpacity: 0.9;
+
+.img-mask {
+  background: url("../images/patterns/pattern.png") repeat;
+}
+
+.header-bg {
+  position: relative;
+  width: 100%;
+  height: 110%;
+  .header-img {
+    background-image: url("../images/repair/trucks/truck1.jpg");
+    opacity: $backgroundOpacity;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    .header-text {
+      text-align: center;
+      h1 {
+        font-size: 7em;
+        color: #fff;
+        margin-top: 1em;
+        border: 0.05em solid;
+        padding: 0.2em;
+        display: inline-block;
+      }
+    }
+
+  }
+}
+
+.big-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: 50% 50% no-repeat;
+
+  // TODO не работает, если убрать и поставить класс .big-image
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.border-bottom {
+  border-bottom: 0.2em solid $customRed;
+}
+
+.border-top {
+  border-top: 0.2em solid $customRed;
+}
+
+.container-info {
+  position: relative;
+  width: 100%;
+}
+
+//.thumbnail-container {
+//  background-image: url("../images/workout/common/bg-white.png");
+//}
+
+.parralax-holder {
+  width: 100%;
+  overflow: hidden;
+  min-height: 400px;
+  .background {
+    opacity: $backgroundOpacity;
+  }
+}
+
+.middle-img {
+  background-image: url("../images/repair/trucks/truck1.jpg");
+  top: -700px;
+}

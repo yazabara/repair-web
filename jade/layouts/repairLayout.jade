@@ -1,0 +1,14 @@
+html(ng-app="repairApp")
+    head
+        block headSection
+            include ../mainBlocks/headSection
+            include ../mainBlocks/mixins
+    body
+        block container
+            .container
+                .page-content
+                    block before-main-block
+                    block content
+
+        block footer-block
+            include ../mainBlocks/footer
