@@ -1,14 +1,15 @@
-nav.navbar.navbar-fixed-top(role='navigation')
+nav.navbar.navbar-fixed-top.navbar-collapsed(role='navigation')
 	.container
 		.navbar-header
 			button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
 				i.fa.fa-bars
-			a.navbar-brand
+			a.navbar-brand.new-font
+				i.fa.fa-truck
 				span Repair.Tver
 		.collapse.navbar-collapse.navbar-right.navbar-main-collapse
 			ul.nav.navbar-nav
 				li
-					a(href='#about') Услуги
+					a(href='#about',scroll-to-item, scroll-to='#id1', scroll-coff='-65') Услуги
 				li
 					a(href='#projects') Профильные авто
 				li

@@ -3,7 +3,6 @@ extends layouts/repairLayout
 block container
 	include pages/repair/nav
 	section.header-bg.parralax-holder.img-mask
-		//include pages/repair/carousel
 		.header-img.background(parallax-background, parallax-ratio="0.4") &nbsp
 		.container
 			.header-text
@@ -11,7 +10,7 @@ block container
 	section.content-wrapper
 		.container-info.border-bottom.border-top.thumbnail-container
 			.container
-				h1.qwe(appear, appear-class="qwe1", disappear-class="qwe4") qwe
+				h1#id1.part-header(appear, appear-class="qwe1", disappear-class="qwe4") Услуги
 				.row
 					include pages/repair/thumbnail
 					include pages/repair/thumbnail

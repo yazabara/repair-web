@@ -12,8 +12,7 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <title>Test jade poject</title>
     <!--link(rel="shortcut icon",href="images/favicon.ico)-->
     <link media="all" rel="stylesheet" type="text/css" href="lib/bootstrap-3.1.1-dist/css/bootstrap.min.css"/>
-    <link media="all" rel="stylesheet" type="text/css" href="lib/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css"/>
-    <link media="all" rel="stylesheet" type="text/css" href="lib/lightbox/css/lightbox.css"/>
+    <!--link(media="all", rel="stylesheet", type="text/css", href='lib/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css')-->
     <link media="all" rel="stylesheet" type="text/css" href="lib/bootstrap-3.1.1-dist/css/docs.min.css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link media="all" rel="stylesheet" type="text/css" href="css/common.css"/>
@@ -21,7 +20,6 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <!--script(type="text/javascript", src="lib/jquery/jquery.nicescroll.min.js")-->
     <script type="text/javascript" src="lib/jquery/jquery.appear.js"></script>
     <script type="text/javascript" src="lib/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/lightbox/js/lightbox.min.js"></script>
     <script type="text/javascript" src="lib/angular/angular.min.js"></script>
     <script type="text/javascript" src="lib/angular/angular.min.js.map"></script>
     <script type="text/javascript" src="lib/angular/angular-resource.min.js"></script>
@@ -31,8 +29,21 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <!--TODO fix responsive-->
   </head>
   <body>
+    <nav role="navigation" class="navbar navbar-fixed-top navbar-collapsed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle"><i class="fa fa-bars"></i></button><a class="navbar-brand new-font"><i class="fa fa-truck"></i><span>Repair.Tver</span></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about" scroll-to-item="scroll-to-item" scroll-to="#id1" scroll-coff="-65">Услуги</a></li>
+            <li><a href="#projects">Профильные авто</a></li>
+            <li><a href="#contact">Контакт</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section class="header-bg parralax-holder img-mask">
-      <!--include pages/repair/carousel-->
       <div parallax-background="parallax-background" parallax-ratio="0.4" class="header-img background">&nbsp</div>
       <div class="container">
         <div class="header-text">
@@ -43,7 +54,7 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <section class="content-wrapper">
       <div class="container-info border-bottom border-top thumbnail-container">
         <div class="container">
-          <h1 appear="appear" appear-class="qwe1" disappear-class="qwe4" class="qwe">qwe</h1>
+          <h1 id="id1" appear="appear" appear-class="qwe1" disappear-class="qwe4" class="part-header">Услуги</h1>
           <div class="row">
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
@@ -73,7 +84,7 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
         </div>
       </div>
       <div class="container-info parralax-holder img-mask">
-        <div parallax-background="parallax-background" parallax-ratio="0.3" class="big-image middle-img background">&nbsp</div>
+        <div parallax-background="parallax-background" parallax-ratio="0.3" parallax-sign="1" class="big-image middle-img background">&nbsp</div>
       </div>
       <div class="container-info border-bottom border-top thumbnail-container">
         <div class="container">

@@ -3,12 +3,14 @@ angular.module('ScrollToItem', []).directive('scrollToItem', function () {
 		restrict: 'A',
 		scope: {
 			scrollTo: "@",
-			scrollEffect: "@"
+			scrollEffect: "@",
+            scrollCoff: "@"
 		},
 		link: function ($scope, $elm) {
 			$elm.on('click', function () {
+                var coff = parseInt($scope.scrollCoff ? $scope.scrollCoff : 0);
 				$('html,body').animate({
-					scrollTop: $($scope.scrollTo).offset().top
+					scrollTop: $($scope.scrollTo).offset().top + coff
 				}, $scope.scrollEffect ? $scope.scrollEffect : "slow");
 			});
 		}

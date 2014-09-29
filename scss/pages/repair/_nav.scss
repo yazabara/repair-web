@@ -6,6 +6,19 @@
 	background: 0, 0;
 	padding: 0;
 	border-bottom: 0, 0;
+	li{
+		a {
+			&:hover {
+				background: 0, 0;
+			}
+		}
+	}
+	.navbar-brand {
+		font-size: 2em;
+		.fa {
+			margin-right: 0.1em;
+		}
+	}
 }
 
 .navbar.navbar-collapsed {

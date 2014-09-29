@@ -215,6 +215,10 @@ body {
 .middle-img {
   background-image: url("../images/repair/trucks/truck4.jpg"); }
 
+.part-header {
+  font-size: 5em;
+  text-align: center; }
+
 .header-bg {
   position: relative;
   width: 100%;
@@ -244,6 +248,12 @@ body {
   background: 0, 0;
   padding: 0;
   border-bottom: 0, 0; }
+  .navbar li a:hover {
+    background: 0, 0; }
+  .navbar .navbar-brand {
+    font-size: 2em; }
+    .navbar .navbar-brand .fa {
+      margin-right: 0.1em; }
 
 .navbar.navbar-collapsed {
   padding: 0.5em;
