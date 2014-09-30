@@ -1,7 +1,7 @@
 /**
  * Модуль для отображения Background'a в стиле парралакса (т.е. изменение положения в зависимости от скролла)
  */
-angular.module('BackgroundParallax', []).directive('parallaxBackground', ['$window', function($window) {
+angular.module('BackgroundParallax', []).directive('parallaxBackgroundDirective', ['$window', function($window) {
 	return {
 		restrict: 'A',
 		transclude: true,

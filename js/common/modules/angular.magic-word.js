@@ -4,7 +4,7 @@
  * #красивость
  */
 
-var MagicWord = angular.module('MagicWord', []).directive('magicWord', ['$window', function ($window) {
+var MagicWord = angular.module('MagicWord', []).directive('magicWordDirective', ['$window', function ($window) {
     return {
         restrict: 'A',
         transclude: true,

@@ -1,5 +1,5 @@
 'use strict';
-var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'Appear', 'ScrollToItem']);
+var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'Appear', 'ScrollToItem' , 'NavigationClass']);
 repairApp.controller('GoogleLocationController', ['$scope', 'MapLocationService', 'MessageBox', function ($scope, MapLocation, MessageBox) {
 
 	var addresses = [];
@@ -19,7 +19,7 @@ repairApp.controller('GoogleLocationController', ['$scope', 'MapLocationService'
  *
  * Спасибо: https://github.com/morr/jquery.appear - тспользуется данный плагин.
  */
-var Appear = angular.module('Appear', []).directive('appear', ['$window' , function ($window) {
+var Appear = angular.module('Appear', []).directive('appearDirective', ['$window' , function ($window) {
 	return {
 		restrict: 'A',
 		transclude: true,
@@ -72,7 +72,7 @@ var Appear = angular.module('Appear', []).directive('appear', ['$window' , funct
  * #красивость
  */
 
-var MagicWord = angular.module('MagicWord', []).directive('magicWord', ['$window', function ($window) {
+var MagicWord = angular.module('MagicWord', []).directive('magicWordDirective', ['$window', function ($window) {
     return {
         restrict: 'A',
         transclude: true,
@@ -153,9 +153,36 @@ MessageBox.service('MessageBox', ['$rootScope', '$timeout', function ($rootScope
 	};
 }]);
 /**
+ * Модуль для добавления "красивости" для навигатора. Добавляте класс, когда pageYOffset будет больше чем заданный коэффициент.
+ */
+angular.module('NavigationClass', []).directive('navClassDirective', ['$window', function($window) {
+    return {
+        restrict: 'A',
+        transclude: true,
+        template: '<div ng-transclude></div>',
+        scope: {
+            navClass: '@',
+            navRangeCoff: '@'
+        },
+        link: function($scope, elem) {
+            var updateClass = function () {
+                var coff = $scope.navRangeCoff ? $scope.navRangeCoff : 1;
+                if ($window.pageYOffset > coff && !elem.hasClass($scope.navClass)) {
+                    elem.addClass($scope.navClass);
+                }
+                if (elem.hasClass($scope.navClass) && $window.pageYOffset <= coff) {
+                    elem.removeClass($scope.navClass);
+                }
+            };
+            angular.element($window).bind("scroll", updateClass);
+        }
+    };
+}]);
+
+/**
  * Модуль для отображения Background'a в стиле парралакса (т.е. изменение положения в зависимости от скролла)
  */
-angular.module('BackgroundParallax', []).directive('parallaxBackground', ['$window', function($window) {
+angular.module('BackgroundParallax', []).directive('parallaxBackgroundDirective', ['$window', function($window) {
 	return {
 		restrict: 'A',
 		transclude: true,

@@ -4,7 +4,7 @@
  *
  * Спасибо: https://github.com/morr/jquery.appear - тспользуется данный плагин.
  */
-var Appear = angular.module('Appear', []).directive('appear', ['$window' , function ($window) {
+var Appear = angular.module('Appear', []).directive('appearDirective', ['$window' , function ($window) {
 	return {
 		restrict: 'A',
 		transclude: true,
