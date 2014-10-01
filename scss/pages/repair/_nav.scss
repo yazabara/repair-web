@@ -2,27 +2,28 @@
 @import "../../common/mixins";
 
 .navbar {
-	@include transforms(background .5s ease-in-out, padding .5s ease-in-out, border-bottom 1s ease-in-out);
-	background: 0, 0;
-	padding: 0;
-	border-bottom: 0, 0;
-	li{
-		a {
-			&:hover {
-				background: 0, 0;
-			}
-		}
-	}
-	.navbar-brand {
-		font-size: 2em;
-		.fa {
-			margin-right: 0.1em;
-		}
-	}
+  font-size: 2em;
+  background: 0, 0;
+  padding: 0;
+  li {
+    a {
+      color: $white;
+      &:hover {
+        background: 0, 0;
+        color: $customRed;
+        border-bottom: 0.1em solid $customRed;
+      }
+    }
+  }
+  .navbar-brand {
+    font-size: 1em;
+    color: $white;
+    cursor: pointer;
+  }
+  @include transforms(background .5s ease-in-out, padding .5s ease-in-out);
 }
 
 .navbar.navbar-collapsed {
-	padding: 0.5em;
-	background-color: $black;
-	border-bottom: 0.2em solid $customRed;
+  padding: 0.5em;
+  background-color: $customOrange;
 }

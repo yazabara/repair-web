@@ -8,6 +8,7 @@ body {
 
 #footer {
   position: absolute;
+  background-color: #E74C3C;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -19,8 +20,17 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Shlapak Font';
+  src: url('fonts/Shlapak.otf');
+  font-weight: normal;
+  font-style: normal; }
+
 .new-font {
   font-family: 'Archive Font'; }
+
+.shlapak-font {
+  font-family: 'Shlapak Font'; }
 
 .magic-word-container span {
   color: #F9BA41;
@@ -240,22 +250,25 @@ body {
         display: inline-block; }
 
 .navbar {
-  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 1s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 1s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 1s ease-in-out;
-  -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 1s ease-in-out;
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 1s ease-in-out;
+  font-size: 2em;
   background: 0, 0;
   padding: 0;
-  border-bottom: 0, 0; }
-  .navbar li a:hover {
-    background: 0, 0; }
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -ms-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out; }
+  .navbar li a {
+    color: #fff; }
+    .navbar li a:hover {
+      background: 0, 0;
+      color: #b84d45;
+      border-bottom: 0.1em solid #b84d45; }
   .navbar .navbar-brand {
-    font-size: 2em; }
-    .navbar .navbar-brand .fa {
-      margin-right: 0.1em; }
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer; }
 
 .navbar.navbar-collapsed {
   padding: 0.5em;
-  background-color: #333333;
-  border-bottom: 0.2em solid #b84d45; }
+  background-color: #E74C3C; }

@@ -153,7 +153,8 @@ MessageBox.service('MessageBox', ['$rootScope', '$timeout', function ($rootScope
 	};
 }]);
 /**
- * Модуль для добавления "красивости" для навигатора. Добавляте класс, когда pageYOffset будет больше чем заданный коэффициент.
+ * Модуль для добавления "красивости" для навигатора.
+ * Добавляте класс, когда pageYOffset будет больше чем заданный коэффициент.
  */
 angular.module('NavigationClass', []).directive('navClassDirective', ['$window', function($window) {
     return {
@@ -174,11 +175,11 @@ angular.module('NavigationClass', []).directive('navClassDirective', ['$window',
                     elem.removeClass($scope.navClass);
                 }
             };
+            angular.element($window).bind('load', updateClass);
             angular.element($window).bind("scroll", updateClass);
         }
     };
 }]);
-
 /**
  * Модуль для отображения Background'a в стиле парралакса (т.е. изменение положения в зависимости от скролла)
  */

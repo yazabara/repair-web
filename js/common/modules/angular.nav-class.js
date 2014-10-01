@@ -21,6 +21,7 @@ angular.module('NavigationClass', []).directive('navClassDirective', ['$window',
                     elem.removeClass($scope.navClass);
                 }
             };
+            angular.element($window).bind('load', updateClass);
             angular.element($window).bind("scroll", updateClass);
         }
     };

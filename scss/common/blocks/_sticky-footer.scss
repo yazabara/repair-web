@@ -1,3 +1,5 @@
+@import "../variables";
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -10,6 +12,7 @@ body {
 
 #footer {
 	position: absolute;
+  background-color: $customOrange;
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
