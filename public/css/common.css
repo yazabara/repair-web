@@ -311,10 +311,10 @@ body {
   background: url("../images/patterns/pattern.png") repeat; }
 
 .big-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .background {
   position: absolute;
@@ -384,7 +384,7 @@ body {
         display: inline-block; }
 
 .navbar {
-  font-size: 2em;
+  font-size: 2.4em;
   background: 0, 0;
   padding: 0;
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
