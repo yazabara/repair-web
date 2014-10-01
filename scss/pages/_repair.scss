@@ -39,6 +39,9 @@ $backgroundOpacity: 0.9;
 .container-info {
   position: relative;
   width: 100%;
+  h1 {
+    margin-bottom: 1em;
+  }
 }
 
 .parralax-holder {
@@ -57,4 +60,10 @@ $backgroundOpacity: 0.9;
 .part-header {
   font-size: 5em;
   text-align: center;
+}
+
+
+/*test*/
+.gradient {
+  @include backgroundGradient3($customTurquoise,$orange,$yellow);
 }

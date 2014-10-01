@@ -1,0 +1,44 @@
+@mixin backgroundGradient($args...) {
+  background: -webkit-gradient($args);
+  background: -webkit-linear-gradient($args);
+  background: -moz-linear-gradient($args);
+  background: -ms-linear-gradient($args);
+  background: -o-linear-gradient($args);
+  background: linear-gradient($args);
+}
+
+//добавляет градиент из 2х цветов
+@mixin backgroundGradient2($from: $customBlue, $to: $customSuccess, $percent: 100%, $image: null) {
+  @if ($image) {
+    background: url($image), -webkit-gradient(linear, left center, right center, from($from), color-stop($percent, $to));
+    background: url($image), -webkit-linear-gradient(left, $from, $to $percent);
+    background: url($image), -moz-linear-gradient(left, $from, $to $percent);
+    background: url($image), -ms-linear-gradient(left, $from, $to $percent);
+    background: url($image), -o-linear-gradient(left, $from, $to $percent);
+    background: url($image), linear-gradient(to right, $from, $to $percent);
+  } @else {
+    background: -webkit-gradient(linear, left center, right center, from($from), color-stop($percent, $to));
+    background: -webkit-linear-gradient(left, $from, $to $percent);
+    background: -moz-linear-gradient(left, $from, $to $percent);
+    background: -ms-linear-gradient(left, $from, $to $percent);
+    background: -o-linear-gradient(left, $from, $to $percent);
+    background: linear-gradient(to right, $from, $to $percent);
+  }
+}
+
+//добавляет градиент из 3х цветов
+@mixin backgroundGradient3($first: $customBlueGreen, $second: $customDarkPurple, $third: $customOrange, $percent: 100%, $image: null) {
+  @if ($image) {
+    background: url($image), -webkit-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: url($image), -moz-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: url($image), -ms-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: url($image), -o-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: url($image), gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+  } @else {
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: -moz-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: -ms-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: -o-gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+    background: gradient(linear, left bottom, right top, color-stop(0, $first), color-stop(0.5, $second), color-stop(1, $third));
+  }
+}

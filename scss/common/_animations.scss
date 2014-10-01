@@ -1,0 +1,47 @@
+@import "animations/bounce";
+
+.animate {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -animation-fill-mode: both;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -animation-duration: 1s;
+}
+
+@mixin animation-delay($delay:0s){
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -ms-animation-duration: $delay;
+  -o-animation-duration: $delay;
+  animation-delay: $delay;
+}
+
+.delay01 {
+  @include animation-delay(0.1s);
+}
+
+.delay03 {
+  @include animation-delay(0.3s);
+}
+
+.delay05 {
+  @include animation-delay(0.5s);
+}
+
+.delay05 {
+  @include animation-delay(0.5s);
+}
+
+.delay07 {
+  @include animation-delay(0.7s);
+}
+
+.delay09 {
+  @include animation-delay(0.9s);
+}
