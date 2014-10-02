@@ -39,9 +39,6 @@ $backgroundOpacity: 0.9;
 .container-info {
   position: relative;
   width: 100%;
-  h1 {
-    margin-bottom: 1em;
-  }
 }
 
 .parralax-holder {
@@ -60,6 +57,8 @@ $backgroundOpacity: 0.9;
 .part-header {
   font-size: 5em;
   text-align: center;
+  border-bottom: 0.02em solid $customGrey;
+  margin-bottom: 0.5em;
 }
 
 

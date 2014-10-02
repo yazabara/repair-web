@@ -122,22 +122,6 @@
   -o-animation-duration: 0.9s;
   animation-delay: 0.9s; }
 
-html {
-  position: relative;
-  min-height: 100%; }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
-
-#footer {
-  position: absolute;
-  background-color: #E74C3C;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px; }
-
 @font-face {
   font-family: 'Archive Font';
   src: url('fonts/Archive.otf');
@@ -155,6 +139,37 @@ body {
 
 .shlapak-font {
   font-family: 'Shlapak Font'; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px; }
+
+#footer {
+  position: absolute;
+  background-color: #E74C3C;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px; }
+
+.service-item {
+  position: relative;
+  padding-left: 6.5em;
+  padding-right: 1em;
+  border: solid 0.5em transparent;
+  margin: 2.5em 0; }
+  .service-item i {
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    font-size: 5em;
+    color: #E74C3C; }
+  .service-item h2 {
+    font-size: 3em; }
 
 .magic-word-container span {
   color: #F9BA41;
@@ -338,8 +353,6 @@ body {
 .container-info {
   position: relative;
   width: 100%; }
-  .container-info h1 {
-    margin-bottom: 1em; }
 
 .parralax-holder {
   width: 100%;
@@ -353,7 +366,9 @@ body {
 
 .part-header {
   font-size: 5em;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 0.02em solid #808080;
+  margin-bottom: 0.5em; }
 
 /*test*/
 .gradient {
@@ -396,7 +411,7 @@ body {
     color: #fff; }
     .navbar a:hover {
       background: 0, 0 !important;
-      border-bottom: 0.1em solid #fff;
+      border-bottom: 0.04em solid #fff;
       cursor: pointer; }
   .navbar .navbar-brand {
     font-size: 1em; }

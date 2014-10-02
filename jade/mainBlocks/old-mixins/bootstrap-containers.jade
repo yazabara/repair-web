@@ -1,0 +1,67 @@
+mixin rowFeaturetteLeft(image, headerInfo, paragpaphs, id)
+    hr.featurette-divider(id="#{id}")
+    .row.featurette
+        .col-md-7
+            h2.featurette-heading #{headerInfo.header}
+                span.text-muted #{headerInfo.span}
+            p.lead
+                | #{paragpaphs}
+        .col-md-5
+            img.featurette-image.img-responsive(data-src="holder.js/500x500/auto",alt="500x500",src="#{image}")
+mixin rowFeaturetteRight(image, headerInfo, paragpaphs, id)
+    hr.featurette-divider(id="#{id}")
+    .row.featurette
+        .col-md-5
+            img.featurette-image.img-responsive(data-src="holder.js/500x500/auto",alt="500x500",src="#{image}")
+        .col-md-7
+            h2.featurette-heading #{headerInfo.header}
+                span.text-muted #{headerInfo.span}
+            p.lead
+                | #{paragpaphs}
+mixin rowFeaturetteLeftList(image, headerInfo, list, id)
+    hr.featurette-divider(id="#{id}")
+    .row.featurette
+        .col-md-7
+            h2.featurette-heading #{headerInfo.header}
+                span.text-muted #{headerInfo.span}
+            ul
+                each item,i in list
+                    li
+                        p.lead #{item}
+        .col-md-5
+            img.featurette-image.img-responsive(data-src="holder.js/500x500/auto",alt="500x500",src="#{image}")
+mixin rowFeaturetteRightList(image, headerInfo, list, id)
+    hr.featurette-divider(id="#{id}")
+    .row.featurette
+        .col-md-5
+            img.featurette-image.img-responsive(data-src="holder.js/500x500/auto",alt="500x500",src="#{image}")
+        .col-md-7
+            h2.featurette-heading #{headerInfo.header}
+                span.text-muted #{headerInfo.span}
+            ul
+                each item,i in list
+                    li
+                        p.lead #{item}
+mixin dropdown(id, list, label)
+    li.dropdown
+        a(href="#",id="#{id}",class="dropdown-toggle",data-toggle="dropdown") #{label}
+            b.caret
+        ul.dropdown-menu(role="menu",aria-labelledby="#{id}")
+            each item in list
+                li
+                    a(href="#{item.link}",tabindex="-1") #{item.info}
+mixin mainFeaturette(id, h2, p , img)
+    .featurette.container(id="#{id}")
+        h2 #{h2}
+        p.lead #{p}
+        img.featurette-image.img-responsive(src="#{img}" alt="info")
+mixin Thumbnail3(id, list)
+    .row(id="#{id}")
+        each item,i in list
+            .col-sm-6.col-md-4
+                .thumbnail
+                    a(href="#{item.img}",data-lightbox="example-set" data-title="#{item.h3} #{item.p}",data-src='holder.js/300x200',style='width: 300px; height: 200px;' )
+                        img(src="#{item.img}" , alt="")
+                    .caption
+                        h3 #{item.h3}
+                        p #{item.p}

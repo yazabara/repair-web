@@ -1,0 +1,22 @@
+@import "../variables";
+
+.service-item {
+  position: relative;
+  padding-left: 6.5em;
+  padding-right: 1em;
+  border: solid 0.5em transparent;
+  margin: 2.5em 0;
+
+  i {
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    font-size: 5em;
+    color: $customOrange;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+}

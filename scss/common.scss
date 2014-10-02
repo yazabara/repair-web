@@ -2,8 +2,10 @@
 @import "common/variables";
 @import "common/mixins/_mixins";
 @import "common/animations";
-@import "common/blocks/sticky-footer";
 @import "common/fonts";
+//blocks
+@import "common/blocks/sticky-footer";
+@import "common/blocks/service-item";
 //modules
 @import "common/modules/magic-word";
 @import "common/modules/show-down";
