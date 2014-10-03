@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixins/transform";
+@import "../../common/mixins/_mixins";
+
+.work-item {
+  background-color: $customOrange;
+  padding: 0;
+  a {
+    display: block;
+    overflow: hidden;
+    .work-item-img {
+      @include transitions(3s ease-in-out);
+    }
+    .work-item-img:hover {
+      @include scale(1.4);
+
+    }
+  }
+
+  .work-item-caption {
+    padding: 1em;
+    h3 {
+      color: $black;
+    }
+    p {
+      color: $white;
+    }
+  }
+}

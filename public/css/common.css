@@ -73,54 +73,49 @@
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
-  -animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  -animation-duration: 1s; }
+  -animation-fill-mode: both; }
 
 .delay01 {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
   -ms-animation-duration: 0.1s;
   -o-animation-duration: 0.1s;
-  animation-delay: 0.1s; }
+  -animation-duration: 0.1s; }
 
 .delay03 {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
   -ms-animation-duration: 0.3s;
   -o-animation-duration: 0.3s;
-  animation-delay: 0.3s; }
+  -animation-duration: 0.3s; }
 
 .delay05 {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
   -ms-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
-  animation-delay: 0.5s; }
+  -animation-duration: 0.5s; }
 
 .delay05 {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
   -ms-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
-  animation-delay: 0.5s; }
+  -animation-duration: 0.5s; }
 
 .delay07 {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
   -ms-animation-duration: 0.7s;
   -o-animation-duration: 0.7s;
-  animation-delay: 0.7s; }
+  -animation-duration: 0.7s; }
 
 .delay09 {
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  -moz-animation-duration: 0.9s;
   -ms-animation-duration: 0.9s;
   -o-animation-duration: 0.9s;
-  animation-delay: 0.9s; }
+  -animation-duration: 0.9s; }
 
 @font-face {
   font-family: 'Archive Font';
@@ -167,9 +162,35 @@ body {
     top: 0.2em;
     left: 0;
     font-size: 5em;
-    color: #E74C3C; }
+    color: #E74C3C;
+    cursor: pointer; }
   .service-item h2 {
     font-size: 3em; }
+
+.work-item {
+  background-color: #E74C3C;
+  padding: 0; }
+  .work-item a {
+    display: block;
+    overflow: hidden; }
+    .work-item a .work-item-img {
+      -webkit-transition: 3s ease-in-out;
+      -moz-transition: 3s ease-in-out;
+      -ms-transition: 3s ease-in-out;
+      -o-transition: 3s ease-in-out;
+      transition: 3s ease-in-out; }
+    .work-item a .work-item-img:hover {
+      -moz-transform: scale(1.4);
+      -o-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      -webkit-transform: scale(1.4);
+      transform: scale(1.4); }
+  .work-item .work-item-caption {
+    padding: 1em; }
+    .work-item .work-item-caption h3 {
+      color: #333333; }
+    .work-item .work-item-caption p {
+      color: #fff; }
 
 .magic-word-container span {
   color: #F9BA41;
@@ -325,11 +346,6 @@ body {
 .img-mask {
   background: url("../images/patterns/pattern.png") repeat; }
 
-.big-image {
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important; }
 
 .background {
   position: absolute;

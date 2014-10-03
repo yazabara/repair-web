@@ -6,20 +6,14 @@
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   -animation-fill-mode: both;
-
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  -animation-duration: 1s;
 }
 
 @mixin animation-delay($delay:0s){
-  -webkit-animation-delay: $delay;
-  -moz-animation-delay: $delay;
+  -webkit-animation-duration: $delay;
+  -moz-animation-duration: $delay;
   -ms-animation-duration: $delay;
   -o-animation-duration: $delay;
-  animation-delay: $delay;
+  -animation-duration: $delay;
 }
 
 .delay01 {
