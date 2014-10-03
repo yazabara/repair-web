@@ -257,8 +257,10 @@ body {
       transform: scale(1.4); }
   .work-item .work-item-caption {
     padding: 1em; }
-    .work-item .work-item-caption h3 {
-      color: #333333; }
+    .work-item .work-item-caption h3.work-item-header {
+      color: #333333;
+      font-size: 3em;
+      text-align: center; }
     .work-item .work-item-caption p {
       color: #fff; }
 

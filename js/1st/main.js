@@ -1,2 +1,2 @@
 'use strict';
-var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'Appear', 'ScrollToItem' , 'NavigationClass']);
+var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'ScrollToItem' , 'NavigationClass']);

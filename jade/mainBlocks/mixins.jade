@@ -3,7 +3,7 @@ include mixins/service-item
 
 mixin test(classParam)
     .col-sm-6.col-md-4
-        .thumbnail(appear-directive, appear-class="animate bounce-left #{classParam}")
+        .thumbnail
             img(data-src='holder.js/100%x200', alt='100%x200', src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=', style='height: 200px; width: 100%; display: block;')
             .caption
                 h3 Thumbnail label
@@ -14,9 +14,9 @@ mixin test(classParam)
 
 mixin test1(classParam, img)
     .col-lg-4.col-sm-6
-        .thumbnail.work-item(appear-directive, appear-class="animate bounce-left #{classParam}")
+        .thumbnail.work-item
             a(href="#")
                 img.work-item-img(src="#{img}",class="img-responsive")
             .work-item-caption
-                h3 Ремонт фары volvo
+                h3.work-item-header.shlapak-font Ремонт фары volvo
                 p Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.

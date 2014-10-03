@@ -1,5 +1,5 @@
 'use strict';
-var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'Appear', 'ScrollToItem' , 'NavigationClass']);
+var repairApp = angular.module('repairApp', ['ui.bootstrap', 'BackgroundParallax', 'ScrollToItem' , 'NavigationClass']);
 repairApp.controller('GoogleLocationController', ['$scope', 'MapLocationService', 'MessageBox', function ($scope, MapLocation, MessageBox) {
 
 	var addresses = [];

@@ -19,8 +19,10 @@
 
   .work-item-caption {
     padding: 1em;
-    h3 {
+    h3.work-item-header {
       color: $black;
+      font-size: 3em;
+      text-align: center;
     }
     p {
       color: $white;
