@@ -14,10 +14,9 @@ mixin test(classParam)
 
 mixin test1(classParam, img)
     .col-lg-4.col-sm-6
-        .thumbnail(appear-directive, appear-class="animate bounce-left #{classParam}")
-            a(href="/template-overviews/grayscale")
-                p
-                    img(src="#{img}",class="img-responsive")
-            .caption
-                h3 Grayscale
-                p A multipurpose one page theme
+        .thumbnail.work-item(appear-directive, appear-class="animate bounce-left #{classParam}")
+            a(href="#")
+                img.work-item-img(src="#{img}",class="img-responsive")
+            .work-item-caption
+                h3 Ремонт фары volvo
+                p Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.
