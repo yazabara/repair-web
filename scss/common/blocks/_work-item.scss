@@ -8,12 +8,12 @@
   a {
     display: block;
     overflow: hidden;
+    max-height: 20em;
     .work-item-img {
       @include transitions(3s ease-in-out);
     }
     .work-item-img:hover {
       @include scale(1.4);
-
     }
   }
 

@@ -1,0 +1,8 @@
+mixin work-item(classParam, img, title, info)
+    .col-lg-4.col-sm-6
+        .thumbnail.work-item
+            a(href="#")
+                img.work-item-img(src="#{img}",class="img-responsive")
+            .work-item-caption
+                h3.work-item-header.shlapak-font #{title}
+                p #{info}

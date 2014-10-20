@@ -1,12 +1,13 @@
 //COMMON
 @import "common/variables";
 @import "common/mixins/_mixins";
-@import "common/animations";
+//@import "common/animations";
 @import "common/fonts";
 //blocks
 @import "common/blocks/sticky-footer";
 @import "common/blocks/service-item";
 @import "common/blocks/work-item";
+@import "common/blocks/permissible";
 //modules
 @import "common/modules/magic-word";
 @import "common/modules/show-down";

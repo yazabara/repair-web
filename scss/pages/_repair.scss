@@ -7,10 +7,10 @@ $backgroundOpacity: 0.9;
 }
 
 .big-image {
-//  -webkit-background-size: cover !important;
-//  -moz-background-size: cover !important;
-//  -o-background-size: cover !important;
-//  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
 }
 
 .background {
@@ -64,4 +64,13 @@ $backgroundOpacity: 0.9;
 /*test*/
 .gradient {
   @include backgroundGradient3($customTurquoise,$orange,$yellow);
+}
+
+.absolute {
+  position: absolute;
+  z-index: 1;
+}
+
+.full-width {
+  width: 100%;
 }

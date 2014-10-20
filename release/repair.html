@@ -1,6 +1,3 @@
-define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { jade = jade.runtime; }
-
-
 <html ng-app="repairApp">
   <head>
     <meta http-equiv="Content-Language"/>
@@ -12,7 +9,7 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <title>Repair.Tver</title>
     <link media="all" rel="stylesheet" type="text/css" href="lib/bootstrap-3.1.1-dist/css/bootstrap.min.css"/>
     <link media="all" rel="stylesheet" type="text/css" href="lib/bootstrap-3.1.1-dist/css/docs.min.css"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link media="all" rel="stylesheet" type="text/css" href="css/common.css"/>
     <script type="text/javascript" src="lib/jquery/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="lib/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
@@ -22,7 +19,6 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
     <script type="text/javascript" src="lib/angular/angular-resource.min.js.map"></script>
     <script type="text/javascript" src="lib/angular/ui-bootstrap-tpls-0.11.0.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <!--TODO fix responsive-->
   </head>
   <body>
     <nav role="navigation" nav-class-directive="nav-class-directive" nav-class="navbar-collapsed" class="navbar navbar-fixed-top navbar-collapsed">
@@ -32,15 +28,15 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse shlapak-font">
           <ul class="nav navbar-nav">
-            <li><a href="#about" scroll-to-item="scroll-to-item" scroll-to="#id-services" scroll-coff="-65">Услуги</a></li>
-            <li><a href="#about" scroll-to-item="scroll-to-item" scroll-to="#id-our-works" scroll-coff="-65">Наши работы</a></li>
-            <li><a href="#about" scroll-to-item="scroll-to-item" scroll-to="#id-contacts" scroll-coff="-65">Контакты</a></li>
+            <li><a href="#id-services" scroll-to-item="scroll-to-item" scroll-to="#id-services" scroll-coff="-65">Услуги</a></li>
+            <li><a href="#id-our-works" scroll-to-item="scroll-to-item" scroll-to="#id-our-works" scroll-coff="-65">Работы</a></li>
+            <li><a href="#id-contacts" scroll-to-item="scroll-to-item" scroll-to="#id-contacts" scroll-coff="-65">Контакты</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <section id="id-home" class="header-bg parralax-holder img-mask">
-      <div parallax-background-directive="parallax-background-directive" parallax-ratio="0.4" class="header-img background">&nbsp</div>
+      <div parallax-background-directive="parallax-background-directive" parallax-ratio="0.4" class="header-img background big-image">&nbsp</div>
       <div class="container">
         <div class="header-text">
           <h1 class="shlapak-font">Мега Заголовок!</h1>
@@ -52,110 +48,103 @@ define(['jade'], function(jade) { if(jade && jade['runtime'] !== undefined) { ja
         <div class="container">
           <h1 class="part-header shlapak-font">Наши услуги</h1>
           <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay01" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
+            <div class="col-md-5 col-md-push-1 col-sm-6">
+                  <div class="service-item"><i class="fa fa-puzzle-piece"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay03" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
+                  <div class="service-item"><i class="fa fa-truck"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay05" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
+                  <div class="service-item"><i class="fa fa-wrench"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
                   </div>
-                </div>
+            </div>
+            <div class="col-md-5 col-md-push-1 col-sm-6">
+                  <div class="service-item"><i class="fa fa-truck"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
+                  </div>
+                  <div class="service-item"><i class="fa fa-bus"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
+                  </div>
+                  <div class="service-item"><i class="fa fa-paint-brush"></i>
+                    <h2 class="shlapak-font">Ремонт</h2>
+                    <p class="text-muted">texttexttexttextte xttexttexttexttexttexttexttext texttexttexttex ttexttexttexttexttext texttexttexttexttextt exttexttexttexttexttex ttexttexttexttext texttexttexttext</p>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-info parralax-holder img-mask">
+      <div class="container-info parralax-holder img-mask hidden-xs">
         <div parallax-background-directive="parallax-background-directive" parallax-ratio="0.3" parallax-sign="1" class="big-image middle-img background">&nbsp</div>
       </div>
       <div id="id-our-works" class="container-info thumbnail-container">
         <div class="container">
           <h1 class="part-header shlapak-font">Наши работы</h1>
           <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay01" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail work-item"><a href="#"><img src="images/repair/works/200120141176.jpg" class="work-item-img img-responsive"/></a>
+                <div class="work-item-caption">
+                  <h3 class="work-item-header shlapak-font">Ремонт фары volvo</h3>
+                  <p>Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.</p>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="thumbnail work-item"><a href="#"><img src="images/repair/works/200120141176.jpg" class="work-item-img img-responsive"/></a>
+                    <div class="work-item-caption">
+                      <h3 class="work-item-header shlapak-font">Ремонт фары volvo</h3>
+                      <p>Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay03" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="thumbnail work-item"><a href="#"><img src="images/repair/works/200120141176.jpg" class="work-item-img img-responsive"/></a>
+                    <div class="work-item-caption">
+                      <h3 class="work-item-header shlapak-font">Ремонт фары volvo</h3>
+                      <p>Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay05" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="thumbnail work-item"><a href="#"><img src="images/repair/works/200120141176.jpg" class="work-item-img img-responsive"/></a>
+                <div class="work-item-caption">
+                  <h3 class="work-item-header shlapak-font">Ремонт фары volvo</h3>
+                  <p>Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.</p>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="thumbnail work-item"><a href="#"><img src="images/repair/works/200120141176.jpg" class="work-item-img img-responsive"/></a>
+                    <div class="work-item-caption">
+                      <h3 class="work-item-header shlapak-font">Ремонт фары volvo</h3>
+                      <p>Описание проблемы, что-нить еще , какая мол была трудная задача - и как было идеально сделано.</p>
                     </div>
                   </div>
                 </div>
           </div>
         </div>
       </div>
-      <div class="container-info parralax-holder img-mask">
+      <div class="container-info parralax-holder img-mask hidden-xs">
         <div parallax-background-directive="parallax-background-directive" parallax-ratio="0.3" parallax-sign="1" class="big-image middle-img background">&nbsp</div>
       </div>
       <div id="id-contacts" class="container-info thumbnail-container">
         <div class="container">
           <h1 class="part-header shlapak-font">Наши контакты</h1>
-          <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay01" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay03" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <div appear-directive="appear-directive" appear-class="animate bounce-left delay05" remove-class="true" class="thumbnail"><img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDIiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEyMSIgeT0iMTAwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjE1cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjQyeDIwMDwvdGV4dD48L3N2Zz4=" style="height: 200px; width: 100%; display: block;"/>
-                    <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                  </div>
-                </div>
-          </div>
+          <div class="row"></div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div id="footer">
-        <div class="container"><span class="text-muted">Created by Yaroslav Zabara. Maybe I will write some info</span></div>
+        <div class="container"><span class="text-muted">Created by Yaroslav Zabara. Maybe I will write some info</span><a href="mailto:yazabara@gmail.com?subject=tver.repair">The text of your link.</a></div>
       </div>
     </footer>
   </body>
 </html>
-
-return this["JST"];
-
-});

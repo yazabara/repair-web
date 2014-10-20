@@ -3,3 +3,10 @@ mixin serviceItem(faClass, title, text, appearClass)
         i(class="fa #{faClass}")
         h2.shlapak-font #{title}
         p.text-muted #{text}
+
+mixin serviceItemList(faClass, title, list, appearClass)
+    .service-item
+        i(class="fa #{faClass}")
+        h2.shlapak-font #{title}
+        each item,i in list
+            p.text-muted #{item}
